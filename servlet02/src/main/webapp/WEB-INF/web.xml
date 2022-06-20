@@ -5,6 +5,11 @@
 http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0"
          metadata-complete="true">
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:mysql://localhost:3306/mybatis</param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>hello</servlet-name>
         <servlet-class>com.julin.servlet.HelloServlet</servlet-class>
@@ -18,9 +23,35 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
         <servlet-name>getc</servlet-name>
         <servlet-class>com.julin.servlet.GetServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>getc</servlet-name>
         <url-pattern>/getc</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getpara</servlet-name>
+        <servlet-class>com.julin.servlet.GetParaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getpara</servlet-name>
+        <url-pattern>/getpara</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>sd</servlet-name>
+        <servlet-class>com.julin.servlet.ServletDispatcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sd</servlet-name>
+        <url-pattern>/sd</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>sp</servlet-name>
+        <servlet-class>com.julin.servlet.ServletProperties</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sp</servlet-name>
+        <url-pattern>/sp</url-pattern>
     </servlet-mapping>
 </web-app>

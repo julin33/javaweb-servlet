@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/request" />
+    <file type="web" url="file://$PROJECT_DIR$/response" />
     <file type="web" url="file://$PROJECT_DIR$/servlet01" />
     <file type="web" url="file://$PROJECT_DIR$/servlet02" />
+    <file type="web" url="file://$PROJECT_DIR$/session-cookie" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
